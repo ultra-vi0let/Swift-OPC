@@ -58,6 +58,7 @@ public class OPC {
             socket = try Socket.create()
             try socket?.connect(to: hostName, port: port)
             sendConfigPackage()
+            print("Socket Created")
         } catch {
             print("Cannot create the socket")
         }
