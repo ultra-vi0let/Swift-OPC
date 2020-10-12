@@ -1,8 +1,10 @@
+// swift-tools-version:5.2
+
 import PackageDescription
 
 let package = Package(
     name: "OPC", 
     dependencies: [
-    	.Package(url: "https://github.com/IBM-Swift/BlueSocket.git", majorVersion: 0, minor: 11)
+        .package(url: "https://github.com/IBM-Swift/BlueSocket.git", from:"0.11")
     ]
 )
